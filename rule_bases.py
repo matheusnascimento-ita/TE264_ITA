@@ -1,0 +1,5 @@
+# -*- coding: utf-8 -*-
+"""Wrapper: importa render() do módulo rule_bases na raiz do projeto."""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from rule_bases import render  # noqa: F401
